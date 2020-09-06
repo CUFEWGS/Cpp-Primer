@@ -16,7 +16,7 @@ std::istream& read(std::istream &, Sales_data &);
 
 struct Sales_data {
 	// constructors
-	Sales_data() = default;
+	Sales_data(){bookNo="defaultNo"; units_sold=10; revenue=100;};
 	Sales_data(const std::string &s) : bookNo(s) { }
 	Sales_data(const std::string &s, unsigned n, double p) :
 		       bookNo(s), units_sold(n), revenue(p * n) { } 
